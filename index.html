@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>line Messaging API Labo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="Column" style="margin: 10px">
+      <div class="fileImgBox">
+        <img id="fileImg" src="" alt="" />
+      </div>
+      <div class="textDisplay">
+        <input id="title" placeholder="タイトル(Max40文字)" type="text" style=""/>
+        <textarea id="textarea" placeholder="説明(Max60文字)" rows='1' style="font-size: 0.8rem;"></textarea>
+      </div>
+      <div class="labelBox">
+        <input class="label" placeholder="選択肢(最大４つ)" type="text" />
+      </div>
+      <button id="addLabelBtn">+</button>
+    </div>
+    <p>イメージ画像を貼る↓</p>
+    <input id="iFileImg" type="file" accept="image/*" />
+    <button id="createLabelBtn">createLabel</button>
+    <button id="sendText">send</button>
+
+    <div class="box">
+      <p>displayName</p>
+      <p id="displayName"></p>
+      <p>userId</p>
+      <p id="userId"></p>
+      <p>ProfileImg</p>
+      <p id="ProfileImgSrc"></p>
+      <div>
+        <img id="ProfileImg" src="" alt="" />
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDwWL7vc689qDMu0RtdeYJTYdkVz4TpeWc",
+        authDomain: "flabo-ce1d2.firebaseapp.com",
+        projectId: "flabo-ce1d2",
+        storageBucket: "flabo-ce1d2.appspot.com",
+        messagingSenderId: "731624640198",
+        appId: "1:731624640198:web:cf752323e8d0d5af8e11c7",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script
+      charset="utf-8"
+      src="https://static.line-scdn.net/liff/edge/2/sdk.js"
+    ></script>
+    <script src="messageObject.js"></script>
+    <script src="lineMessageAPI.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
