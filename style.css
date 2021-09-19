@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+button,input,textarea {
+  display: block;
+  border: none;
+  background-color: transparent;
+}
+/* img {
+  width: 50vw;
+} */
+
+.box {
+  width: 75%;
+  padding: 10%;
+}
+
+.Column {
+  width: 300px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color: skyblue;
+}
+
+.fileImgBox {
+  background-color: rgba(255, 255, 255, 0.767);
+  text-align: center;
+}
+
+
+.fileImgBox img {
+  vertical-align:middle;
+}
+
+.textDisplay {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+/* テキストエリア */
+#textarea {
+  resize: none;
+  line-height: 1.5;
+  width: 90%;
+}
+
+
+.labelBox input {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#addLabelBtn {
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  border: black 1px solid;
+  border-radius: 50%;
+  text-align: center;
+}
+/* テキストエリア */
